@@ -67,4 +67,56 @@
       alert('Thank you! We will get back to you soon.');
     });
   }
+
+  // ---------- Book Classes Form (WhatsApp Integration) ----------
+  const bookClassForm = document.getElementById('bookClassForm');
+  if (bookClassForm) {
+    bookClassForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Get form values
+      const name = document.getElementById('userName').value.trim();
+      const email = document.getElementById('userEmail').value.trim();
+      const phone = document.getElementById('userPhone').value.trim();
+      const course = document.getElementById('userCourse').value.trim();
+
+      // Validate fields
+      if (!name || !email || !phone || !course) {
+        alert('Please fill in all fields');
+        return;
+      }
+
+      // Validate email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email');
+        return;
+      }
+
+      // Validate phone (basic)
+      if (phone.length < 10) {
+        alert('Please enter a valid phone number');
+        return;
+      }
+
+      // Create WhatsApp message
+      const message = `Hello, I want to book a free live class.\n\nProgram: ${course}\nName: ${name}\nEmail: ${email}\nPhone: ${phone}`;
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappNumber = '919753781222'; // WhatsApp number with country code
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+      // Show success message
+      const formMessage = document.getElementById('formMessage');
+      formMessage.textContent = 'Redirecting to WhatsApp...';
+      formMessage.style.display = 'block';
+
+      // Redirect to WhatsApp after short delay
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+        // Reset form
+        bookClassForm.reset();
+        formMessage.style.display = 'none';
+      }, 500);
+    });
+  }
 })();
