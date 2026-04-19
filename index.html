@@ -14,15 +14,19 @@
   <meta property="og:description" content="Practical computer training in Indore. Job-oriented courses: MS Office, Tally GST, Video Editing, Graphic Design. 9AM–9PM. Free demo class.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_IN">
-  <meta property="og:url" content="https://skilledcomputerinstitute.com/index.html">
+  <meta property="og:url" content="https://skilledcomputerinstitute.com/">
+  <meta property="og:image" content="https://skilledcomputerinstitute.com/assets/logo/logo.png">
+  <meta property="og:image:alt" content="Skilled Computer Institute – computer training in Indore">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Skilled Computer Institute – Learn Skills.​ Get Placed. Build Careers.">
+  <meta name="twitter:title" content="Skilled Computer Institute – Learn Skills. Get Placed. Build Careers.">
   <meta name="twitter:description" content="Practical computer training with hands-on projects & job placement support.">
+  <meta name="twitter:image" content="https://skilledcomputerinstitute.com/assets/logo/logo.png">
 
   <title>Skilled Computer Institute – Computer Training Institute in Indore</title>
-  <link rel="canonical" href="https://skilledcomputerinstitute.com/index.html">
+  <link rel="canonical" href="https://skilledcomputerinstitute.com/">
+  <meta name="theme-color" content="#1c2f50">
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -30,7 +34,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/style.css">
   <link rel="icon" href="assets/logo/logo.png">
@@ -103,49 +107,31 @@
   }
   </script>
 
-  <!-- JSON-LD BreadcrumbList Schema -->
+  <!-- JSON-LD WebSite (single-page site) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://skilledcomputerinstitute.com/index.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Courses",
-        "item": "https://skilledcomputerinstitute.com/courses.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "About",
-        "item": "https://skilledcomputerinstitute.com/about.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": "Contact",
-        "item": "https://skilledcomputerinstitute.com/contact.html"
-      }
-    ]
+    "@type": "WebSite",
+    "name": "Skilled Computer Institute",
+    "url": "https://skilledcomputerinstitute.com/",
+    "description": "Computer training institute in Indore — MS Office, Tally GST, video editing, graphic design.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Skilled Computer Institute"
+    }
   }
   </script>
 </head>
 <body>
+  <a class="visually-hidden-focusable skip-link btn btn-sm btn-primary position-fixed top-0 start-0 m-2" href="#main-content">Skip to main content</a>
   <!-- ========== HEADER / NAVBAR ========== -->
-  <header class="header navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+  <header class="header navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" id="navbar">
     <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-        <img src="assets/logo/logo.png" alt="Skilled Computer Institute logo">
-        <span>Skilled Computer Institute</span>
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/logo/logo.png" alt="" width="40" height="40" decoding="async">
+        <span class="navbar-brand-text">Skilled Computer Institute</span>
       </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler border border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <nav class="collapse navbar-collapse" id="navMenu">
@@ -155,19 +141,18 @@
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item"><a class="btn btn-cta btn-outline-light rounded-pill px-4" href="#contact">Enroll Now</a></li>
+          <li class="nav-item mt-2 mt-lg-0"><a class="btn btn-cta rounded-pill px-4 w-100 w-lg-auto" href="#contact">Enroll Now</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- ========== HERO SECTION ========== -->
     <section class="hero position-relative overflow-hidden" id="home">
-      <div class="hero-overlay"></div>
       <div class="hero-bg"></div>
-      <div class="container position-relative">
-        <div class="row min-vh-100 align-items-center justify-content-center text-center py-5">
+      <div class="container position-relative h-100 d-flex flex-column">
+        <div class="row flex-grow-1 align-items-center justify-content-center text-center py-4 py-md-5">
           <div class="col-lg-10">
             <h1 class="hero-title mb-4">Learn Skills. Get Placed. Build Your Career.</h1>
             <p class="hero-subtext mb-5 mx-auto">Practical computer training for real jobs. Master MS Office, Tally GST, Video Editing, and Graphic Design with industry experts. Join Indore’s trusted computer institute.</p>
@@ -180,22 +165,343 @@
       </div>
     </section>
 
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="about section-py bg-light" id="about">
+      <div class="container">
+        <h2 class="section-title text-center">About Skilled Computer Institute</h2>
+        <div class="row align-items-center align-items-lg-stretch g-5 about-split">
+          <div class="col-lg-6 order-lg-2 about-image-column">
+            <div class="about-image rounded-3 overflow-hidden shadow">
+              <img src="assets/skilled_hero.png" alt="Students learning at Skilled Computer Institute" class="img-fluid w-100 about-image-photo" loading="lazy" width="800" height="500">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="about-content-box rounded-3 p-4 p-lg-5 shadow">
+              <h3 class="h4 mb-4">Practical Training. Real Skills.</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3 d-flex align-items-start gap-2"><span class="text-accent">◆</span> <span>Hands-on practical training on live projects</span></li>
+                <li class="mb-3 d-flex align-items-start gap-2"><span class="text-accent">◆</span> <span>Job-oriented courses aligned with industry needs</span></li>
+                <li class="mb-3 d-flex align-items-start gap-2"><span class="text-accent">◆</span> <span>Offline institute with personal attention and doubt clearing</span></li>
+                <li class="d-flex align-items-start gap-2"><span class="text-accent">◆</span> <span>Industry-relevant skills: MS Office, Tally GST, Video Editing, Graphic Design</span></li>
+              </ul>
+              <a class="btn btn-accent mt-4 rounded-pill px-4" href="#courses">View Courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COURSES SECTION ========== -->
+    <section class="courses courses-section section-py" id="courses">
+      <div class="container">
+        <h2 class="section-title text-center">Our Courses</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <a href="#contact" class="course-card course-card-v2 course-card-v2--sky text-decoration-none d-flex flex-column h-100" aria-label="Explore Basic Computer — book via contact">
+              <div class="course-card-v2__panel">
+                <div class="course-card-v2__media">
+                  <img src="assets/courses/basic_computer.gif" alt="Basic Computer course" class="course-card-v2__img" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <h3 class="course-card-v2__title">Basic Computer</h3>
+                <p class="course-card-v2__desc">PC fundamentals, internet, email &amp; typing — perfect for beginners in Indore.</p>
+                <div class="course-card-v2__tags">
+                  <span class="course-tag">Fundamentals</span>
+                  <span class="course-tag">OS</span>
+                  <span class="course-tag">Internet</span>
+                  <span class="course-tag">Typing</span>
+                </div>
+              </div>
+              <div class="course-card-v2__footer">
+                <span class="course-card-v2__explore">Explore</span>
+                <span class="course-card-v2__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="#contact" class="course-card course-card-v2 course-card-v2--peach text-decoration-none d-flex flex-column h-100" aria-label="Explore MS Office — book via contact">
+              <div class="course-card-v2__panel">
+                <div class="course-card-v2__media">
+                  <img src="assets/courses/ms-office.jpg" alt="MS Office course" class="course-card-v2__img" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <h3 class="course-card-v2__title">MS Office</h3>
+                <p class="course-card-v2__desc">Word, Excel &amp; PowerPoint with practical office projects and shortcuts.</p>
+                <div class="course-card-v2__tags">
+                  <span class="course-tag">Word</span>
+                  <span class="course-tag">Excel</span>
+                  <span class="course-tag">PowerPoint</span>
+                  <span class="course-tag">Mail merge</span>
+                </div>
+              </div>
+              <div class="course-card-v2__footer">
+                <span class="course-card-v2__explore">Explore</span>
+                <span class="course-card-v2__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="#contact" class="course-card course-card-v2 course-card-v2--lavender text-decoration-none d-flex flex-column h-100" aria-label="Explore Advanced Excel — book via contact">
+              <div class="course-card-v2__panel">
+                <div class="course-card-v2__media">
+                  <img src="assets/courses/advance_excel.jpg" alt="Advanced Excel course" class="course-card-v2__img" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <h3 class="course-card-v2__title">Advanced Excel</h3>
+                <p class="course-card-v2__desc">Data analysis, pivot tables &amp; dashboards for real reporting workflows.</p>
+                <div class="course-card-v2__tags">
+                  <span class="course-tag">Pivot tables</span>
+                  <span class="course-tag">Charts</span>
+                  <span class="course-tag">Analysis</span>
+                  <span class="course-tag">Projects</span>
+                </div>
+              </div>
+              <div class="course-card-v2__footer">
+                <span class="course-card-v2__explore">Explore</span>
+                <span class="course-card-v2__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="#contact" class="course-card course-card-v2 course-card-v2--mint text-decoration-none d-flex flex-column h-100" aria-label="Explore Tally with GST — book via contact">
+              <div class="course-card-v2__panel">
+                <div class="course-card-v2__media">
+                  <img src="assets/courses/tally.jpg" alt="Tally with GST course" class="course-card-v2__img" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <h3 class="course-card-v2__title">Tally with GST</h3>
+                <p class="course-card-v2__desc">Accounting, inventory, banking &amp; GST-ready books for shops &amp; offices.</p>
+                <div class="course-card-v2__tags">
+                  <span class="course-tag">Accounting</span>
+                  <span class="course-tag">GST</span>
+                  <span class="course-tag">Inventory</span>
+                  <span class="course-tag">Reports</span>
+                </div>
+              </div>
+              <div class="course-card-v2__footer">
+                <span class="course-card-v2__explore">Explore</span>
+                <span class="course-card-v2__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="#contact" class="course-card course-card-v2 course-card-v2--sky2 text-decoration-none d-flex flex-column h-100" aria-label="Explore Premiere Pro video editing — book via contact">
+              <div class="course-card-v2__panel">
+                <div class="course-card-v2__media">
+                  <img src="assets/courses/vedio editing.jpg" alt="Premiere Pro video editing course" class="course-card-v2__img" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <h3 class="course-card-v2__title">Video Editing (Premiere Pro)</h3>
+                <p class="course-card-v2__desc">Timeline editing, colour &amp; sound — build reels and professional cuts.</p>
+                <div class="course-card-v2__tags">
+                  <span class="course-tag">Timeline</span>
+                  <span class="course-tag">Colour</span>
+                  <span class="course-tag">Audio</span>
+                  <span class="course-tag">Export</span>
+                </div>
+              </div>
+              <div class="course-card-v2__footer">
+                <span class="course-card-v2__explore">Explore</span>
+                <span class="course-card-v2__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="#contact" class="course-card course-card-v2 course-card-v2--peach2 text-decoration-none d-flex flex-column h-100" aria-label="Explore After Effects course — book via contact">
+              <div class="course-card-v2__panel">
+                <div class="course-card-v2__media">
+                  <img src="assets/courses/after_effects.gif" alt="After Effects motion course" class="course-card-v2__img" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <h3 class="course-card-v2__title">Video Editing (After Effects)</h3>
+                <p class="course-card-v2__desc">Motion graphics, VFX &amp; animated titles for social and commercial work.</p>
+                <div class="course-card-v2__tags">
+                  <span class="course-tag">VFX</span>
+                  <span class="course-tag">Motion</span>
+                  <span class="course-tag">Tracking</span>
+                  <span class="course-tag">Masking</span>
+                </div>
+              </div>
+              <div class="course-card-v2__footer">
+                <span class="course-card-v2__explore">Explore</span>
+                <span class="course-card-v2__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="#contact" class="course-card course-card-v2 course-card-v2--mint2 text-decoration-none d-flex flex-column h-100" aria-label="Explore Graphic Designing — book via contact">
+              <div class="course-card-v2__panel">
+                <div class="course-card-v2__media">
+                  <img src="assets/courses/graphic_design.jpg" alt="Graphic design course" class="course-card-v2__img" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <h3 class="course-card-v2__title">Graphic Designing</h3>
+                <p class="course-card-v2__desc">Photoshop &amp; CorelDRAW — logos, posters &amp; social creatives hands-on.</p>
+                <div class="course-card-v2__tags">
+                  <span class="course-tag">Photoshop</span>
+                  <span class="course-tag">CorelDRAW</span>
+                  <span class="course-tag">Branding</span>
+                  <span class="course-tag">Layouts</span>
+                </div>
+              </div>
+              <div class="course-card-v2__footer">
+                <span class="course-card-v2__explore">Explore</span>
+                <span class="course-card-v2__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== KEY HIGHLIGHTS ========== -->
+    <section class="highlights-section section-py" id="highlights" aria-labelledby="highlights-heading">
+      <div class="container">
+        <h2 id="highlights-heading" class="section-title text-center">Key highlights of Skilled Computer Institute</h2>
+        <div class="highlights-grid mt-4">
+          <article class="highlight-card highlight-card--sky">
+            <div class="highlight-card__icon" aria-hidden="true">📚</div>
+            <p class="highlight-card__text">Structured, industry-vetted curriculum</p>
+          </article>
+          <article class="highlight-card highlight-card--peach">
+            <div class="highlight-card__icon" aria-hidden="true">🎥</div>
+            <p class="highlight-card__text">Live classes by faculty who have been there, done that</p>
+          </article>
+          <article class="highlight-card highlight-card--mint">
+            <div class="highlight-card__icon" aria-hidden="true">🧰</div>
+            <p class="highlight-card__text">Practical experience through real-life projects</p>
+          </article>
+          <article class="highlight-card highlight-card--lavender">
+            <div class="highlight-card__icon" aria-hidden="true">🤝</div>
+            <p class="highlight-card__text">Aspirational peer group of students &amp; alumni</p>
+          </article>
+          <article class="highlight-card highlight-card--cyan">
+            <div class="highlight-card__icon" aria-hidden="true">👨‍🏫</div>
+            <p class="highlight-card__text">Regular 1:1 mentorship from industry veterans</p>
+          </article>
+          <article class="highlight-card highlight-card--sand">
+            <div class="highlight-card__icon" aria-hidden="true">🚀</div>
+            <p class="highlight-card__text">Career support via dedicated recruitment &amp; alumni network</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY SECTION ========== -->
+    <section class="gallery section-py" id="gallery">
+      <div class="container">
+        <h2 class="section-title text-center">Gallery</h2>
+        <div class="row g-4">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item rounded-3 overflow-hidden shadow-sm bg-secondary bg-opacity-25" style="aspect-ratio:1;">
+              <img src="assets/photo1.webp" alt="Institute classroom at Skilled Computer Institute, Indore" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" width="800" height="800" decoding="async">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item rounded-3 overflow-hidden shadow-sm bg-secondary bg-opacity-25" style="aspect-ratio:1;">
+              <img src="assets/photo2.webp" alt="Students in computer lab at Skilled Computer Institute" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" width="800" height="800" decoding="async">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item rounded-3 overflow-hidden shadow-sm bg-secondary bg-opacity-25" style="aspect-ratio:1;">
+              <img src="assets/photo3.webp" alt="Computer training session at Skilled Computer Institute" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" width="800" height="800" decoding="async">
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="gallery-item rounded-3 overflow-hidden shadow-sm bg-secondary bg-opacity-25" style="aspect-ratio:1;">
+              <img src="assets/photo4.png" alt="Skilled Computer Institute — campus and training" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" width="800" height="800" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ADVISOR CTA SECTION ========== -->
+    <section class="advisor-cta-section">
+      <div class="container">
+        <div class="advisor-cta-content text-center">
+          <h2 class="advisor-cta-title">Talk to our Advisor</h2>
+          <p class="advisor-cta-subtitle">Get a personalized career roadmap, free career counselling, and access to events.</p>
+          <a class="btn btn-advisor-cta" href="#contact">Request a call</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact section-py bg-light" id="contact">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Contact Us</h2>
+        <div class="row g-4 g-lg-5">
+          <!-- Left Column: Contact Information -->
+          <div class="col-12 col-lg-5">
+            <h3 class="h5 mb-4 contact-section-subheading">Get in Touch</h3>
+            
+            <!-- Address -->
+            <div class="contact-item mb-4">
+              <div class="d-flex gap-3">
+                <div class="contact-icon contact-icon-emoji" aria-hidden="true">📍</div>
+                <div>
+                  <h4 class="h6 mb-2 contact-item-title">Office Address</h4>
+                  <p class="mb-0 text-muted contact-item-text">202, 2nd Floor, White Lotus Plaza,<br>Avantika Nagar, Scheme No 51,<br>Indore, 452006</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="contact-item mb-4">
+              <div class="d-flex gap-3">
+                <div class="contact-icon contact-icon-emoji" aria-hidden="true">📞</div>
+                <div>
+                  <h4 class="h6 mb-2 contact-item-title">Phone Number</h4>
+                  <p class="mb-0"><a class="contact-link" href="tel:+919753781222">+91 9753781222</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email Addresses -->
+            <div class="contact-item mb-4">
+              <div class="d-flex gap-3">
+                <div class="contact-icon contact-icon-emoji" aria-hidden="true">✉️</div>
+                <div>
+                  <h4 class="h6 mb-2 contact-item-title">Email Addresses</h4>
+                  <p class="mb-1"><a class="contact-link" href="mailto:skilledcomputerinstitute@gmail.com">skilledcomputerinstitute@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="contact-item">
+              <div class="d-flex gap-3">
+                <div class="contact-icon contact-icon-emoji" aria-hidden="true">🕒</div>
+                <div>
+                  <h4 class="h6 mb-2 contact-item-title">Business Hours</h4>
+                  <p class="mb-1 small text-muted"><strong>Monday – Saturday:</strong> 9:00 AM – 9:00 PM</p>
+                  <p class="mb-0 small text-muted"><strong>Sunday:</strong> Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Map -->
+          <div class="col-12 col-lg-7">
+            <h3 class="h5 mb-4 contact-map-heading">Find Us</h3>
+            <div class="map-wrapper rounded-3 overflow-hidden shadow map-embed">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.0197234567890!2d75.8577!3d22.7196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b4101b5%3A0x1e0b3030d22e3c5!2s202%2C%202nd%20Floor%2C%20White%20Lotus%20Plaza%2C%20Avantika%20Nagar%2C%20Indore!5e0!3m2!1sen!2sin!4v1710000000000" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Skilled Computer Institute location map"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ========== BOOK FREE LIVE CLASSES SECTION ========== -->
     <section class="book-classes section-py" id="book-classes">
-      <div class="container">
-        <div class="row align-items-center g-5">
+      <div class="container book-classes-container">
+        <div class="row g-4 g-lg-4 align-items-stretch book-split">
           <!-- Left Side - Image -->
-          <div class="col-lg-6">
+          <div class="col-lg-6 book-media-column">
             <div class="book-image rounded-3 overflow-hidden shadow">
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Live training classes at Skilled Computer Institute" class="img-fluid w-100" loading="lazy" width="600" height="500">
+              <img src="assets/form_img.jpg" alt="Live training classes at Skilled Computer Institute" class="img-fluid w-100 book-image-photo" loading="lazy" width="600" height="500">
             </div>
           </div>
 
           <!-- Right Side - Form -->
-          <div class="col-lg-6">
+          <div class="col-lg-6 book-form-column">
             <div class="book-form-wrapper">
-              <h2 class="h3 mb-2 text-primary">Book Your Free Live Class</h2>
-              <p class="text-muted mb-4">Join our live training session and learn from industry experts. Fill the form below to get started!</p>
+              <h2 class="h3 mb-2 book-form-heading">Book Your Free Live Class</h2>
+              <p class="book-form-lead mb-4">Join our live training session and learn from industry experts. Fill the form below to get started!</p>
               
               <form id="bookClassForm" class="book-form">
                 <div class="mb-3">
@@ -235,338 +541,39 @@
         </div>
       </div>
     </section>
-
-    <!-- ========== ABOUT SECTION ========== -->
-    <section class="about section-py bg-light" id="about">
-      <div class="container">
-        <h2 class="section-title text-center">About Skilled Computer Institute</h2>
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6 order-lg-2">
-            <div class="about-image rounded-3 overflow-hidden shadow">
-              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="Students learning at Skilled Computer Institute" class="img-fluid w-100" loading="lazy" width="800" height="500">
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <div class="about-content-box bg-primary text-white rounded-3 p-4 p-lg-5 shadow">
-              <h3 class="h4 mb-4">Practical Training. Real Skills.</h3>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-3 d-flex align-items-start gap-2"><span class="text-accent">◆</span> <span>Hands-on practical training on live projects</span></li>
-                <li class="mb-3 d-flex align-items-start gap-2"><span class="text-accent">◆</span> <span>Job-oriented courses aligned with industry needs</span></li>
-                <li class="mb-3 d-flex align-items-start gap-2"><span class="text-accent">◆</span> <span>Offline institute with personal attention and doubt clearing</span></li>
-                <li class="d-flex align-items-start gap-2"><span class="text-accent">◆</span> <span>Industry-relevant skills: MS Office, Tally GST, Video Editing, Graphic Design</span></li>
-              </ul>
-              <a class="btn btn-accent mt-4 rounded-pill px-4" href="#courses">View Courses</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== COURSES SECTION ========== -->
-    <section class="courses section-py" id="courses">
-      <div class="container">
-        <h2 class="section-title text-center">Our Courses</h2>
-        <div class="row g-4">
-          <!-- Basic Computer -->
-          <div class="col-md-6 col-lg-4">
-            <article class="course-card card h-100 border-0 rounded-3 shadow-sm overflow-hidden">
-              <div class="card-icon bg-primary bg-opacity-10 text-primary p-3"><span class="icon-text">💻</span></div>
-              <div class="card-body p-4">
-                <h3 class="h5 card-title mb-3">Basic Computer</h3>
-                <ul class="card-list small text-muted mb-4">
-                  <li>Fundamentals</li>
-                  <li>OS</li>
-                  <li>Internet & Email</li>
-                  <li>Typing</li>
-                  <li>Troubleshooting</li>
-                </ul>
-                <a class="btn btn-outline-primary btn-sm rounded-pill stretched-link" href="#contact">Enroll Now</a>
-              </div>
-            </article>
-          </div>
-          <!-- MS Office -->
-          <div class="col-md-6 col-lg-4">
-            <article class="course-card card h-100 border-0 rounded-3 shadow-sm overflow-hidden">
-              <div class="card-icon bg-primary bg-opacity-10 text-primary p-3"><span class="icon-text">📄</span></div>
-              <div class="card-body p-4">
-                <h3 class="h5 card-title mb-3">MS Office</h3>
-                <ul class="card-list small text-muted mb-4">
-                  <li>Word, Excel, PowerPoint</li>
-                  <li>Mail Merge</li>
-                  <li>Animation</li>
-                </ul>
-                <a class="btn btn-outline-primary btn-sm rounded-pill stretched-link" href="#contact">Enroll Now</a>
-              </div>
-            </article>
-          </div>
-          <!-- Advanced Excel -->
-          <div class="col-md-6 col-lg-4">
-            <article class="course-card card h-100 border-0 rounded-3 shadow-sm overflow-hidden">
-              <div class="card-icon bg-primary bg-opacity-10 text-primary p-3"><span class="icon-text">📊</span></div>
-              <div class="card-body p-4">
-                <h3 class="h5 card-title mb-3">Advanced Excel</h3>
-                <ul class="card-list small text-muted mb-4">
-                  <li>Data Analysis</li>
-                  <li>Visualization</li>
-                  <li>Pivot Tables</li>
-                  <li>Project Management</li>
-                </ul>
-                <a class="btn btn-outline-primary btn-sm rounded-pill stretched-link" href="#contact">Enroll Now</a>
-              </div>
-            </article>
-          </div>
-          <!-- Tally with GST -->
-          <div class="col-md-6 col-lg-4">
-            <article class="course-card card h-100 border-0 rounded-3 shadow-sm overflow-hidden">
-              <div class="card-icon bg-primary bg-opacity-10 text-primary p-3"><span class="icon-text">📒</span></div>
-              <div class="card-body p-4">
-                <h3 class="h5 card-title mb-3">Tally with GST</h3>
-                <ul class="card-list small text-muted mb-4">
-                  <li>Accounting</li>
-                  <li>Inventory</li>
-                  <li>Banking</li>
-                  <li>Taxation</li>
-                  <li>Ledger & Balance Sheet</li>
-                </ul>
-                <a class="btn btn-outline-primary btn-sm rounded-pill stretched-link" href="#contact">Enroll Now</a>
-              </div>
-            </article>
-          </div>
-          <!-- Video Editing (Premiere Pro) -->
-          <div class="col-md-6 col-lg-4">
-            <article class="course-card card h-100 border-0 rounded-3 shadow-sm overflow-hidden">
-              <div class="card-icon bg-primary bg-opacity-10 text-primary p-3"><span class="icon-text">🎬</span></div>
-              <div class="card-body p-4">
-                <h3 class="h5 card-title mb-3">Video Editing (Premiere Pro)</h3>
-                <ul class="card-list small text-muted mb-4">
-                  <li>Timeline Editing</li>
-                  <li>Keyframing</li>
-                  <li>Color Correction</li>
-                  <li>Exporting</li>
-                </ul>
-                <a class="btn btn-outline-primary btn-sm rounded-pill stretched-link" href="#contact">Enroll Now</a>
-              </div>
-            </article>
-          </div>
-          <!-- Video Editing (After Effects) -->
-          <div class="col-md-6 col-lg-4">
-            <article class="course-card card h-100 border-0 rounded-3 shadow-sm overflow-hidden">
-              <div class="card-icon bg-primary bg-opacity-10 text-primary p-3"><span class="icon-text">✨</span></div>
-              <div class="card-body p-4">
-                <h3 class="h5 card-title mb-3">Video Editing (After Effects)</h3>
-                <ul class="card-list small text-muted mb-4">
-                  <li>VFX</li>
-                  <li>Text Animation</li>
-                  <li>Tracking</li>
-                  <li>Masking</li>
-                </ul>
-                <a class="btn btn-outline-primary btn-sm rounded-pill stretched-link" href="#contact">Enroll Now</a>
-              </div>
-            </article>
-          </div>
-          <!-- Graphic Designing -->
-          <div class="col-md-6 col-lg-4">
-            <article class="course-card card h-100 border-0 rounded-3 shadow-sm overflow-hidden">
-              <div class="card-icon bg-primary bg-opacity-10 text-primary p-3"><span class="icon-text">🎨</span></div>
-              <div class="card-body p-4">
-                <h3 class="h5 card-title mb-3">Graphic Designing</h3>
-                <ul class="card-list small text-muted mb-4">
-                  <li>Photoshop</li>
-                  <li>Corel Draw</li>
-                  <li>Retouching</li>
-                  <li>Filters & Effects</li>
-                </ul>
-                <a class="btn btn-outline-primary btn-sm rounded-pill stretched-link" href="#contact">Enroll Now</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== KEY HIGHLIGHTS ========== -->
-    <section class="why-choose section-py bg-light">
-      <div class="container">
-        <h2 class="section-title text-center">Key highlights of the Skilled computer institute</h2>
-        <div class="highlights-grid mt-4">
-          <div class="highlight-box hb-blue">
-            <div class="hb-icon">📚</div>
-            <div class="hb-title">Structured, industry-vetted curriculum</div>
-          </div>
-          <div class="highlight-box hb-pink">
-            <div class="hb-icon">🎥</div>
-            <div class="hb-title">Live classes by faculty who have been there, done that</div>
-          </div>
-          <div class="highlight-box hb-green">
-            <div class="hb-icon">🧰</div>
-            <div class="hb-title">Practical experience through real-life projects</div>
-          </div>
-          <div class="highlight-box hb-purple">
-            <div class="hb-icon">🤝</div>
-            <div class="hb-title">Aspirational peer group of students & alumni</div>
-          </div>
-          <div class="highlight-box hb-sky">
-            <div class="hb-icon">👨‍🏫</div>
-            <div class="hb-title">Regular 1:1 mentorship from industry veterans</div>
-          </div>
-          <div class="highlight-box hb-orange">
-            <div class="hb-icon">🚀</div>
-            <div class="hb-title">Career support via dedicated recruitment & alumni network</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== ADVISOR CTA (image reference without person) ========== -->
-    <section class="advisor-cta container">
-      <div class="cta-inner">
-        <h2>Talk to our Advisor</h2>
-        <p class="lead">Get a personalized career roadmap, free career counselling, and access to events.</p>
-        <a class="btn btn-request" href="#contact">Request a call</a>
-      </div>
-    </section>
-
-    <!-- ========== GALLERY SECTION ========== -->
-    <section class="gallery section-py" id="gallery">
-      <div class="container">
-        <h2 class="section-title text-center">Gallery</h2>
-        <div class="row g-4">
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="gallery-item rounded-3 overflow-hidden shadow-sm bg-secondary bg-opacity-25" style="aspect-ratio:1;">
-              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80" alt="Institute classroom" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" width="400" height="400">
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="gallery-item rounded-3 overflow-hidden shadow-sm bg-secondary bg-opacity-25" style="aspect-ratio:1;">
-              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&q=80" alt="Students in computer lab" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" width="400" height="400">
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="gallery-item rounded-3 overflow-hidden shadow-sm bg-secondary bg-opacity-25" style="aspect-ratio:1;">
-              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&q=80" alt="Coding and design training" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" width="400" height="400">
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="gallery-item rounded-3 overflow-hidden shadow-sm bg-secondary bg-opacity-25" style="aspect-ratio:1;">
-              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&q=80" alt="Training session" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" width="400" height="400">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== ADVISOR CTA SECTION ========== -->
-    <section class="advisor-cta-section">
-      <div class="container">
-        <div class="advisor-cta-content text-center">
-          <h2 class="advisor-cta-title">Talk to our Advisor</h2>
-          <p class="advisor-cta-subtitle">Get a personalized career roadmap, free career counselling, and access to events.</p>
-          <a class="btn btn-advisor-cta" href="#contact">Request a call</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== CONTACT SECTION ========== -->
-    <section class="contact section-py bg-light" id="contact">
-      <div class="container">
-        <h2 class="section-title text-center mb-5">Contact Us</h2>
-        <div class="row g-4 g-lg-5">
-          <!-- Left Column: Contact Information -->
-          <div class="col-lg-5">
-            <h3 class="h5 mb-4" style="font-weight: 700; color: var(--primary);">Get in Touch</h3>
-            
-            <!-- Address -->
-            <div class="contact-item mb-4">
-              <div class="d-flex gap-3">
-                <div class="contact-icon" style="font-size: 1.5rem; color: var(--primary);">📍</div>
-                <div>
-                  <h5 class="h6 mb-2" style="font-weight: 700;">Office Address</h5>
-                  <p class="mb-0 text-muted" style="line-height: 1.6;">202, 2nd Floor, White Lotus Plaza,<br>Avantika Nagar, Scheme No 51,<br>Indore, 452006</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Phone Number -->
-            <div class="contact-item mb-4">
-              <div class="d-flex gap-3">
-                <div class="contact-icon" style="font-size: 1.5rem; color: var(--primary);">📞</div>
-                <div>
-                  <h5 class="h6 mb-2" style="font-weight: 700;">Phone Number</h5>
-                  <p class="mb-0"><a href="tel:+919753781222" style="color: rgb(28, 47, 80); text-decoration: none; font-weight: 600;">+91 9753781222</a></p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Email Addresses -->
-            <div class="contact-item mb-4">
-              <div class="d-flex gap-3">
-                <div class="contact-icon" style="font-size: 1.5rem; color: var(--primary);">✉️</div>
-                <div>
-                  <h5 class="h6 mb-2" style="font-weight: 700;">Email Addresses</h5>
-                  <p class="mb-1"><a href="mailto:skilledcomputerinstitute@gmail.com" style="color: rgb(28, 47, 80); text-decoration: none;">skilledcomputerinstitute@gmail.com</a></p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Business Hours -->
-            <div class="contact-item">
-              <div class="d-flex gap-3">
-                <div class="contact-icon" style="font-size: 1.5rem; color: var(--primary);">🕒</div>
-                <div>
-                  <h5 class="h6 mb-2" style="font-weight: 700;">Business Hours</h5>
-                  <p class="mb-1 small text-muted"><strong>Monday – Saturday:</strong> 9:00 AM – 9:00 PM</p>
-                  <p class="mb-0 small text-muted"><strong>Sunday:</strong> Closed</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Column: Map -->
-          <div class="col-lg-7">
-            <h3 class="h5 mb-4" style="font-weight: 700; color: var(--primary);">Find Us</h3>
-            <div class="map-wrapper rounded-3 overflow-hidden shadow" style="height: 400px;">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.0197234567890!2d75.8577!3d22.7196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b4101b5%3A0x1e0b3030d22e3c5!2s202%2C%202nd%20Floor%2C%20White%20Lotus%20Plaza%2C%20Avantika%20Nagar%2C%20Indore!5e0!3m2!1sen!2sin!4v1710000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Skilled Computer Institute location map"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
-    <div class="footer-top text-white py-5">
+    <div class="footer-top py-5">
       <div class="container">
         <div class="row g-4">
           <!-- Column 1: Logo and Brand -->
-          <div class="col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="d-flex align-items-center mb-3">
               <img src="assets/logo/logo.png" alt="Skilled Computer Institute logo" class="footer-logo me-3">
             </div>
             <h3 class="h5 mb-3">Skilled Computer Institute</h3>
-            <p class="small text-white-50 mb-0">Practical computer training in Indore. Learn skills, get placed, build your career with job-oriented courses.</p>
+            <p class="small text-muted mb-0">Practical computer training in Indore. Learn skills, get placed, build your career with job-oriented courses.</p>
           </div>
 
           <!-- Column 2: Our Services -->
-          <div class="col-lg-2">
-            <h4 class="h6 mb-3 footer-heading">Our Services</h4>
+          <div class="col-6 col-md-6 col-lg-2">
+            <h4 class="h6 mb-3 footer-heading">Quick links</h4>
             <ul class="list-unstyled small">
-              <li><a class="text-white-50 text-decoration-none footer-link" href="index.html">Home</a></li>
-              <li><a class="text-white-50 text-decoration-none footer-link" href="courses.html">Courses</a></li>
-              <li><a class="text-white-50 text-decoration-none footer-link" href="about.html">About</a></li>
-              <li><a class="text-white-50 text-decoration-none footer-link" href="contact.html">FAQ</a></li>
-              <li><a class="text-white-50 text-decoration-none footer-link" href="contact.html">Contact</a></li>
+              <li><a class="text-decoration-none footer-link" href="index.html#home">Home</a></li>
+              <li><a class="text-decoration-none footer-link" href="index.html#courses">Courses</a></li>
+              <li><a class="text-decoration-none footer-link" href="index.html#about">About</a></li>
+              <li><a class="text-decoration-none footer-link" href="index.html#gallery">Gallery</a></li>
+              <li><a class="text-decoration-none footer-link" href="index.html#contact">Contact</a></li>
             </ul>
           </div>
 
           <!-- Column 3: Contact Info -->
-          <div class="col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3">
             <h4 class="h6 mb-3 footer-heading">Contact INFO</h4>
             <div class="mb-3">
-              <p class="small text-white-50 mb-2">
+              <p class="small text-muted mb-2">
                 📍 202, 2nd Floor, White Lotus Plaza, Avantika Nagar, Indore, 452006
               </p>
             </div>
@@ -576,32 +583,32 @@
               </a>
             </div>
             <div>
-              <p class="small text-white-50 mb-0">
-                ✉️ <a href="mailto:skilledcomputerinstitute@gmail.com" class="text-white-50 text-decoration-none footer-link">skilledcomputerinstitute@gmail.com</a>
+              <p class="small text-muted mb-0">
+                ✉️ <a href="mailto:skilledcomputerinstitute@gmail.com" class="text-decoration-none footer-link">skilledcomputerinstitute@gmail.com</a>
               </p>
             </div>
           </div>
 
           <!-- Column 4: Follow Us -->
-          <div class="col-lg-2">
+          <div class="col-12 col-md-6 col-lg-2">
             <h4 class="h6 mb-3 footer-heading">Follow Us On</h4>
-            <div class="d-flex gap-2">
-              <a href="#" class="social-icon text-white" aria-label="YouTube" title="YouTube">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.67 2.67 0 0 1 1.91 1.888c.263.527.447 1.21.497 2.185.045.83.067 1.14.067 3.349v.07c0 2.208-.022 2.52-.067 3.35a5.838 5.838 0 0 1-.497 2.185 2.67 2.67 0 0 1-1.91 1.888 26.059 26.059 0 0 1-6.11.335h-.089a26.06 26.06 0 0 1-6.111-.335 2.67 2.67 0 0 1-1.91-1.888 5.858 5.858 0 0 1-.497-2.185 5.848 5.848 0 0 1-.067-3.35v-.07c0-2.208.022-2.52.067-3.35a5.835 5.835 0 0 1 .497-2.185 2.67 2.67 0 0 1 1.91-1.888 26.059 26.059 0 0 1 6.11-.335zM5.72 12.912a3.823 3.823 0 1 1 7.646 0 3.823 3.823 0 0 1-7.646 0zm6.936-5.615a.894.894 0 1 1 1.788 0 .894.894 0 0 1-1.788 0z"/>
+            <div class="footer-social-icons d-flex flex-nowrap gap-2 align-items-center">
+              <a href="https://www.youtube.com/results?search_query=Skilled+Computer+Institute+Indore" class="social-icon" aria-label="YouTube (search)" rel="noopener noreferrer" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.67 2.67 0 0 1 1.91 1.888c.263.527.447 1.21.497 2.185.045.83.067 1.14.067 3.349v.07c0 2.208-.022 2.52-.067 3.35a5.838 5.838 0 0 1-.497 2.185 2.67 2.67 0 0 1-1.91 1.888 26.059 26.059 0 0 1-6.11.335h-.089a26.06 26.06 0 0 1-6.111-.335 2.67 2.67 0 0 1-1.91-1.888 5.858 5.858 0 0 1-.497-2.185 5.848 5.848 0 0 1-.067-3.35v-.07c0-2.208.022-2.52.067-3.35a5.835 5.835 0 0 1 .497-2.185 2.67 2.67 0 0 1 1.91-1.888 26.059 26.059 0 0 1 6.11-.335zM6.545 11.11V4.89L11.11 8l-4.565 3.11z"/>
                 </svg>
               </a>
-              <a href="#" class="social-icon text-white" aria-label="Facebook" title="Facebook">
+              <a href="https://www.facebook.com/skilledcomputerinstitute" class="social-icon" aria-label="Facebook" rel="noopener noreferrer" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
                   <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.166 1.791.166v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                 </svg>
               </a>
-              <a href="#" class="social-icon text-white" aria-label="LinkedIn" title="LinkedIn">
+              <a href="https://www.linkedin.com/company/skilledcomputerinstitute" class="social-icon" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
                   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                 </svg>
               </a>
-              <a href="#" class="social-icon text-white" aria-label="Instagram" title="Instagram">
+              <a href="https://www.instagram.com/skilledcomputerinstitute" class="social-icon" aria-label="Instagram" rel="noopener noreferrer" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
                   <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76c-.198.509-.332 1.09-.372 1.942C.008 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.332 1.942.372.853.04 1.125.048 3.298.048 2.172 0 2.444-.01 3.298-.048.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942.040-.853.049-1.125.049-3.298 0-2.172-.01-2.445-.049-3.298-.040-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.009 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.252.373.145.64.319.92.599.28.28.453.546.599.92.086.282.217.706.252 1.486.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.252 1.485a2.479 2.479 0 0 1-.599.919c-.28.28-.546.453-.92.599-.282.086-.705.217-1.485.252-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.035-1.203-.166-1.485-.252a2.477 2.477 0 0 1-.92-.599 2.478 2.478 0 0 1-.6-.92c-.086-.282-.217-.705-.252-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.035-.78.166-1.204.252-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.599.282-.086.705-.217 1.485-.252.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.596.596 0 1 0 0 1.192.596.596 0 0 0 0-1.192zm-4.971 1.538a3.966 3.966 0 1 0 0 7.93 3.966 3.966 0 0 0 0-7.93zm0 1.441a2.524 2.524 0 1 1 0 5.049 2.524 2.524 0 0 1 0-5.049z"/>
                 </svg>
@@ -613,14 +620,14 @@
     </div>
 
     <!-- Footer Bottom -->
-    <div class="footer-bottom py-3 text-white text-center small">
+    <div class="footer-bottom py-3 text-center small">
       <div class="container">Copyright © 2026 Skilled Computer Institute. All rights reserved.</div>
     </div>
 
     <!-- Bottom Bar -->
-    <div class="bottom-bar text-white text-center py-2">
-      <div class="container">
-        <p class="mb-0 small">📞 Call us: <strong>+91 9753781222</strong> | 🕒 Mon-Sat: 9 AM - 9 PM | 📍 Indore, Madhya Pradesh</p>
+    <div class="bottom-bar text-center py-2">
+      <div class="container px-3">
+        <p class="mb-0 small bottom-bar-text"><span class="bottom-bar-item">📞 <a href="tel:+919753781222" class="text-white text-decoration-none">+91 9753781222</a></span><span class="bottom-bar-sep" aria-hidden="true"> · </span><span class="bottom-bar-item">🕒 Mon–Sat 9–9</span><span class="bottom-bar-sep" aria-hidden="true"> · </span><span class="bottom-bar-item">📍 Indore, MP</span></p>
       </div>
     </div>
   </footer>
@@ -629,7 +636,7 @@
   <script src="scripts/script.js"></script>
   
   <!-- WhatsApp Button -->
-  <a href="https://wa.me/919753781222?text=Hello%20Skilled%20Computer%20Institute"target="_blank" class="whatsapp-btn" title="Chat with us on WhatsApp">
+  <a href="https://wa.me/919753781222?text=Hello%20Skilled%20Computer%20Institute" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Chat on WhatsApp" title="Chat with us on WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
       <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.348.1-.116.133-.197.198-.330.065-.134.034-.248-.015-.348-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
     </svg>

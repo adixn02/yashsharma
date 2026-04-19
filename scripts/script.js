@@ -20,7 +20,8 @@
     onScroll();
   }
 
-  // ---------- Smooth scroll for anchor links ----------
+  // ---------- Smooth scroll for anchor links + close mobile menu ----------
+  const navCollapse = document.getElementById('navMenu');
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
@@ -29,13 +30,16 @@
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (navCollapse && navCollapse.classList.contains('show') && typeof bootstrap !== 'undefined') {
+          bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
+        }
       }
     });
   });
 
   // ---------- Fade-in sections on scroll ----------
   const fadeElements = document.querySelectorAll(
-    '.about, .courses .section-title, .course-card, .why-card, .gallery-item, .contact-form-wrapper, .contact-info, .section-title'
+    '.book-classes, .about, .courses .section-title, .course-card, .highlight-card, .gallery-item, .advisor-cta-section, .contact .section-title, .section-title'
   );
 
   const observerOptions = {
@@ -111,8 +115,14 @@
       formMessage.style.display = 'block';
 
       // Redirect to WhatsApp after short delay
-      setTimeout(() => {
-        window.open(whatsappUrl, '_blank');
+      setTimeout(function () {
+        var wa = document.createElement('a');
+        wa.href = whatsappUrl;
+        wa.target = '_blank';
+        wa.rel = 'noopener noreferrer';
+        document.body.appendChild(wa);
+        wa.click();
+        wa.remove();
         // Reset form
         bookClassForm.reset();
         formMessage.style.display = 'none';

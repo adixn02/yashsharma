@@ -3,82 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Page not found. Return to Skilled Computer Institute website to explore our computer training courses in Indore.">
+  <meta name="description" content="This page could not be found. Return to Skilled Computer Institute — computer training in Indore.">
   <meta name="robots" content="noindex, follow">
-  <title>404 - Page Not Found | Skilled Computer Institute</title>
+  <meta name="theme-color" content="#1c2f50">
+  <meta property="og:title" content="404 – Page not found | Skilled Computer Institute">
+  <meta property="og:description" content="The page you requested is missing. Go back to our homepage for courses and contact details.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <title>404 – Page not found | Skilled Computer Institute</title>
+  <link rel="canonical" href="https://skilledcomputerinstitute.com/404.html">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="icon" href="assets/logo/logo.png">
-  <link rel="canonical" href="https://skilledcomputerinstitute.com/404.html">
   <style>
-    body {
+    body.page-404 {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Figtree', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(145deg, #1c2f50 0%, #0f1a2e 45%, #152a45 100%);
+      color: #fff;
+    }
+
+    .page-404 main {
+      flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: clamp(1.25rem, 5vw, 2.5rem);
     }
-    .error-container {
+
+    .error-panel {
+      width: 100%;
+      max-width: 36rem;
       text-align: center;
-      color: white;
-      padding: 20px;
+      padding: clamp(1.5rem, 4vw, 2.5rem);
+      border-radius: 1rem;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
     }
+
     .error-code {
-      font-size: 120px;
+      font-size: clamp(4rem, 18vw, 7.5rem);
       font-weight: 700;
       line-height: 1;
-      margin-bottom: 20px;
+      margin-bottom: 0.35em;
+      letter-spacing: -0.04em;
+      color: #7eb8ff;
     }
+
     .error-message {
-      font-size: 28px;
-      margin-bottom: 15px;
+      font-size: clamp(1.15rem, 3.5vw, 1.5rem);
       font-weight: 600;
+      margin-bottom: 0.75rem;
     }
+
     .error-description {
-      font-size: 16px;
-      margin-bottom: 40px;
-      opacity: 0.9;
-      max-width: 500px;
+      font-size: clamp(0.9rem, 2.5vw, 1rem);
+      margin-bottom: 1.75rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.82);
+      max-width: 28rem;
       margin-left: auto;
       margin-right: auto;
     }
-    .btn-home {
-      background-color: #ffffff;
-      color: #667eea;
-      padding: 12px 30px;
-      font-weight: 600;
-      border-radius: 50px;
-      text-decoration: none;
+
+    .btn-home-404 {
       display: inline-block;
-      transition: all 0.3s ease;
+      background: #fff;
+      color: #1c2f50;
+      padding: 0.65rem 1.75rem;
+      font-weight: 600;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .btn-home:hover {
-      background-color: #f0f0f0;
+
+    .btn-home-404:hover {
+      color: #1c2f50;
       transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      color: #667eea;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
     }
   </style>
 </head>
-<body>
-  <div class="error-container">
-    <div class="error-code">404</div>
-    <div class="error-message">Oops! Page Not Found</div>
-    <p class="error-description">
-      The page you're looking for doesn't exist or has been moved. 
-      Let's get you back to exploring our computer training courses.
-    </p>
-    <a href="index.html" class="btn-home">Go Back Home</a>
-  </div>
-
-  <!-- Optional: Suggest popular pages -->
-  <script>
-    // Redirect after 10 seconds if user doesn't click
-    // Uncomment if desired:
-    // setTimeout(() => { window.location.href = 'index.html'; }, 10000);
-  </script>
+<body class="page-404">
+  <main>
+    <div class="error-panel">
+      <p class="error-code" aria-hidden="true">404</p>
+      <h1 class="error-message">Page not found</h1>
+      <p class="error-description">
+        The address may be wrong or the page was removed. You can return to our homepage for courses, gallery, and contact information.
+      </p>
+      <a href="index.html" class="btn-home-404">Back to home</a>
+    </div>
+  </main>
 </body>
 </html>
